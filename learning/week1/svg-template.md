@@ -104,7 +104,7 @@ Draw negative numbers in red and positive numbers in green.
 
 <svg width="500" height="200" style="border:1px solid grey">
 {% for point in data %}
-    <circle cx="{{point[0]}}" cy="{{point[1]}}" r="2" stroke="black" stroke-width="3" fill="red" />
+    <circle cx="{{point[0]*3+200}}" cy="{{point[1]*3}}" r="2" stroke="black" stroke-width="3" fill="red" />
 {% endfor %}
 </svg>
 
@@ -117,6 +117,6 @@ of the circle to represent the third value.
 
 <svg width="500" height="200" style="border:1px solid grey">
 {% for point in data %}
-    <circle cx="{{point[0]}}" cy="{{point[1]}}" r="2" stroke="black" stroke-width="3" fill="red" />
+    <circle cx="{{point[0]*3+200}}" cy="{{point[1]*3}}" r="{{point[2]}}" stroke="black" stroke-width="3" fill="red" />
 {% endfor %}
 </svg>
