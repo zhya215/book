@@ -12,3 +12,8 @@
     * [Tinker](hackathons/tinker/index.md)
         * [Method](hackathons/tinker/method.md)
         * [Report](hackathons/tinker/report.md)
+    * [Classmates](hackathons/classmates/index.md)
+        * [Data](hackathons/classmates/data.md)
+        * [Warmup](hackathons/classmates/warmup.md)
+        * [Analysis](hackathons/classmates/analysis.md)
+        * [Report](hackathons/classmates/report.md)
