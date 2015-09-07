@@ -12,6 +12,7 @@
         * [Report](learning/week2/report.md)
         * [Tableau Viz](learning/week2/viz.md)
     * [Week 3](learning/week3/index.md)
+        * [Github API](learning/week3/github-api.md)
         * [Lodash Drills](learning/week3/lodash-drills.md)
         * [Lodash GroupBy](learning/week3/lodash-groupby.md)        
 * [Hackathons](hackathons/index.md)
