@@ -74,7 +74,13 @@ What names begin with the letter J?
 
 {% solution %}
 
-var result = 'not done'
+var list = _.filter(data, function(element){
+  var name=element.name
+  return name.charAt(0) == 'J'
+})
+var result=_.map(list, function(element){
+  return element.name
+})
 return result
 
 {% endlodashexercise %}
@@ -96,8 +102,11 @@ How many Johns?
 3
 
 {% solution %}
-var result = 'not done'
-return result
+var list = _.filter(data, function(element){
+  var name=element.name
+  return name == 'John'
+})
+return _.size(list)
 
 {% endlodashexercise %}
 
@@ -119,8 +128,11 @@ What are all the first names?
 ["John","Mary","Peter","Ben"]
 
 {% solution %}
-var result = 'not done'
-return result
+var list = _.map(data, function(element){
+  var name=element.name.split(" ")
+  return name[0]
+})
+return list
 
 {% endlodashexercise %}
 
@@ -145,7 +157,14 @@ What are the first names of Smith?
 ["John","Mary","Ben"]
 
 {% solution %}
-var result = 'not done'
+var list = _.filter(data, function(element){
+  var name=element.name.split(" ")
+  return name[1] == 'Smith'
+})
+var result = _.map(list, function(element){
+  var name=element.name.split(" ")
+  return name[0]
+})
 return result
 {% endlodashexercise %}
 
@@ -170,7 +189,10 @@ Change the format to lastname, firstname
 [{name: 'Smith, John'}, {name: 'Kay, Mary'}, {name: 'Pan, Peter'}]
 
 {% solution %}
-var result = 'not done'
+var result = _.map(data, function(element){
+  var name=element.name.split(" ")
+  return {"name": name[1]+", "+name[0]}
+})
 return result
 {% endlodashexercise %}
 
