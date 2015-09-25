@@ -29,11 +29,9 @@ var maxGroups=_.mapValues(groups, function(g){
 var maxType=_.pick(maxGroups, function(g){
 	return g == _.max(maxGroups)
 })
-console.log(maxType);
 return maxType
 {% endlodash %}
 {{result | json}}
-{{data | json}}
 
 # What are the top 5 bird species that are involved? (ZachLamb)
 
