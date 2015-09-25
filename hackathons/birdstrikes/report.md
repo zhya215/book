@@ -16,7 +16,7 @@ This report is prepared by
 
 
 
-![screenshot](birdstrikes_q1.png)
+![screenshot](type_of_aircraft.png)
 
 Airplane is the type with the most instances of damaged caused.
 
