@@ -24,10 +24,16 @@ learn how to write appropraite database commands to do what you want.
 This server has been configured to be read-only so you don't have to worry about
 accidentally wiping the data off this server.
 
+While the data is dumping, you should see something similar to this
+![dumping](./dumping.png)
+
 ## Import Data
 
 Then, you can get this data into your own Mongodb server using the restore command.
 Read the documentation to figure out what command to run: [mongorestore](http://docs.mongodb.org/manual/reference/program/mongorestore/).
+
+While the data is being restored, you should see this
+![restore](./restore.png)
 
 ## Command-line Interface
 
@@ -35,12 +41,11 @@ Connect to Mongodb through the command line interface.
 
 Issue a query:
 ```
-    db.collection....
+    db.listings.find({"n":"com.evernote"}).pretty()
 ```
-
 The goal is to be able to see something like below in the terminal.
 
-![screenshot](./screenshot.png)
+![screenshot](./query.png)
 
 (Replace this screenshot with a screenshot of each individual's own computer.
  Include the entire desktop in the screenshot so we can know this screenshot
